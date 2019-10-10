@@ -2,24 +2,23 @@
 public class Challenge3
 {
   public static void String(String[] args){
-int highest = 10;
-     int diffrence;
-     int x = 0;
-     int y = 0;
-         for(int i=highest;i>=1;i--){    
-      x=x+(i^2); 
-      y=(y+i)^2;
+int highest = 100;
+     double diffrence;
+     double x = 0;
+     double y = 0;
+         for(double i=highest;i>=1;i--){    
+      x=x+Math.pow(i,2); 
+      y=(y+i);
+      
       if(i == 1){
-          x = x^2; 
-          
-          //Math.pow;
+      y = Math.pow(y,2);
         }
   }    
-  
-        
-    int z = x - y;
-   System.out.println(x);
+     System.out.println(x);
    System.out.println(y);
-       System.out.println(z);
+
+         
+    int z = (int)Math.abs(x - y);
+        System.out.println(z);
     }  
     }
